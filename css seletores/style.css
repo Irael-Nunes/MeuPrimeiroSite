@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sticky-div {
+    position: sticky;
+    top: 0px; /* Ajuste a altura conforme necessário */
+    background-color: #ff6600; /* Cor de fundo da div sticky */
+    padding: 10px 0; /* Preenchimento para espaçamento */
+    border: 1px solid #ff6600; /* Borda (opcional) */
+}
+
+
+#principal {
+    background-image: url('img/banner.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#principal h1 {
+    font-size: 46px;
+}
+
+#principal p {
+    font-size: 30px;
+}
+
+.menu-item {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.menu-item img {
+    max-width: 50%;
+    height: auto;
+    display: block; /* Garante que a imagem ocupe toda a largura do contêiner */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.menu-item p {
+    text-align: center;
+}
+
+.preço {
+    font-size: 18px;
+    color: #ff6600;
+    text-align: center;
+}
+
+#about {
+    background-color: #fff;
+    padding: 20px;
+}
+
+#contact {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

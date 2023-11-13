@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pedido - Assados e Cia Nunes</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('picanha-grelhada.avif');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #formulario {
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            color: #FFFFFF;
+            background-color: rgba(0, 0, 0, 0.7);
+            /* background-color: rgba(255, 255, 255, 0.7); */
+        }
+        #formulario form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #formulario form label {
+            margin: 10px 0;
+            text-align: center;
+        }
+        #formulario form input,
+        #formulario form select,
+        #formulario form textarea {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #enviar-pedido-button {
+            background-color: #4CAF50; /* Cor de fundo do botão (verde) */
+            color: white; /* Cor do texto do botão (branco) */
+            border: none;
+            border-radius: 5px;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 16px; /* Tamanho da fonte */
+        }
+    </style>
+</head>
+<body>
+    <div id="formulario">
+        <h1>Nunes Assados e Cia </h1>
+        <p>Gostoso todo dia</p>
+        <h2>Faça seu pedido</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+            
+            <label for="prato">Escolha seu prato:</label>
+            <select id="prato" name="prato">
+                <option value="Marmita Espetinho">Marmita Espetinho</option>
+                <option value="Marmita Churrasco">Marmita Churrasco</option>
+                <option value="Marmita Bife">Marmita Bife</option>
+                <option value="Marmita Chambari">Marmita Chambari</option>
+            </select>
+            
+            <label for="observacoes">Observações (opcional):</label>
+            <textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea>
+            
+            <input type="button" value="Enviar Pedido" onclick="enviarPedido()" id="enviar-pedido-button">
+        </form>
+    </div>
+
+    <script>
+        function enviarPedido() {
+            var nome = document.getElementById("nome").value;
+            var telefone = document.getElementById("telefone").value;
+            var endereco = document.getElementById("endereco").value;
+            var prato = document.getElementById("prato").value;
+            var observacoes = document.getElementById("observacoes").value;
+
+            alert("Pedido enviado:\nNome: " + nome + "\nTelefone: " + telefone + "\nEndereço: " + endereco + "\nPrato: " + prato + "\nObservações: " + observacoes);
+        }
+    </script>
+</body>
+</html>
